@@ -1,5 +1,5 @@
-application: pycharm-gae-hello
-module: pycharmhello
+application: anigbogu-sandbox1
+module: pycharm-hello
 version: 1
 runtime: python27
 api_version: 1
