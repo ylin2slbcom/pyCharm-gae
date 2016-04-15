@@ -29,4 +29,4 @@ deployment:
     branch: master
     commands:
       - $HOME/google-cloud-sdk/bin/gcloud config set project anigbogu-sandbox1
-      - $HOME/google-cloud-sdk/bin/gcloud preview app deploy app.yaml --version master --promote -q
+      - $HOME/google-cloud-sdk/bin/gcloud preview app deploy app.yaml --promote -q
