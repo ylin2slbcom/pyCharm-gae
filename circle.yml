@@ -1,6 +1,3 @@
-machine:
-  environment:
-    CLOUDSDK_COMPONENT_MANAGER_FIXED_SDK_VERSION: 0.9.85
 dependencies:
   pre:
     #2015-10 need to install newer version from what circle provides
