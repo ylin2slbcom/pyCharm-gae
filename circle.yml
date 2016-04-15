@@ -28,7 +28,8 @@ deployment:
   master-and-commander:
     branch: master
     commands:
-      - echo $CLIENT_SECRET | base64 --decode > $HOME/client-secret.json
+      - echo $CLIENT_SECRET > decoded.json
+      - base64 --decode decoded.json > $HOME/client-secret.json
       - $HOME/google-cloud-sdk/bin/gcloud --quiet components update
       - $HOME/google-cloud-sdk/bin/gcloud auth activate-service-account --key-file ${HOME}/client-secret.json
       - $HOME/google-cloud-sdk/bin/gcloud config set project anigbogu-sandbox1
