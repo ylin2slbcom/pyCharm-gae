@@ -1,4 +1,3 @@
-application: anigbogu-sandbox1
 module: pycharm-hello
 runtime: python27
 api_version: 1
