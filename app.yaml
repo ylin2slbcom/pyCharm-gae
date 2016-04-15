@@ -1,5 +1,4 @@
 module: pycharm-hello
-version: v1-4
 runtime: python27
 api_version: 1
 threadsafe: yes
