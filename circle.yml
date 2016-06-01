@@ -11,6 +11,7 @@ test:
     - pwd
     - ls -lR
     - ls -l $HOME
+    - pwd
     - python testrunner.py $HOME/google_appengine . 
 
     #tvik 09Mar2016: Removed 'coveralls:report' from the line below as there is currently a
