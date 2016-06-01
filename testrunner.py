@@ -20,7 +20,9 @@ def main(sdk_path, test_path):
     sys.path.insert(0, sdk_path)
     import dev_appserver
     dev_appserver.fix_sys_path()
+    print test_path
     suite = unittest2.loader.TestLoader().discover(test_path, top_level_dir='.')
+    print(suite)
     unittest2.TextTestRunner(verbosity=2).run(suite)
  
  
@@ -28,7 +30,7 @@ if __name__ == '__main__':
     parser = optparse.OptionParser(USAGE)
     options, args = parser.parse_args()
     if len(args) != 2:
-        print 'Error: Exactly 2 arguments required.'
+        print 'Error: Exactly 2 arguments required, but ' + len(args)
         parser.print_help()
         sys.exit(1)
     SDK_PATH = args[0]
