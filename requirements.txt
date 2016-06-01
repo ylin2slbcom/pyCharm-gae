@@ -1,0 +1,10 @@
+# This requirements file lists all third-party dependencies for this project.
+# GoogleAppEngineCloudStorageClient
+gcloud
+appengine-sdk==1.9.36.post0
+pytest
+unittest2
+#google-api-python-client==1.5.0
+#oauth2client
+#Flask
+# Required for tests
